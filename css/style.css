@@ -1,0 +1,128 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background: #FAFAFA;
+}
+.container{ 
+    width: 960px;
+    margin: 0 auto;
+}
+/* header css stat */
+.header-container{    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.header-box{
+    padding: 30px;
+    border: 1px solid #b72525;
+}
+.header-box h1{
+    color: #000;
+    font-family: PT Serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1.62px;
+}
+.header-box h2{
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.header-box p{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+}
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 100px);
+    column-gap: 35px;
+    row-gap: 35px;
+}
+.image-container > div {
+    justify-self: center;
+    display: block;
+    position: relative;
+}
+/* .image-container .img-box{
+    display: flex;
+    flex-direction: column;
+    
+} */
+.img-box1 {
+    grid-column: 1;
+    grid-row: 1 / 1;
+}
+.img-box2 {
+    grid-column: 2;
+    grid-row: 2/3;
+}
+.img-box3{
+    grid-column: 3;
+}
+.img-box4{
+    grid-column: 1;
+    grid-row: 5/6;
+}
+.img-box5{
+    grid-column: 2;
+    grid-row: 7/8;
+}
+.img-box6{
+    grid-column: 3;
+    grid-row: 5/6;
+}
+.image-container img{
+    width: 238px;
+    height: auto;
+}
+.image-container p {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 15px;
+    writing-mode: vertical-rl;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -25px;
+    height: 30vh;
+}
+.footer-area {
+    margin: 20px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: #f0f0f0;
+    padding: 30px 0px;
+}
+.footer-area p{
+    color: #A9A9A9;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.footer-area p span{
+    color: #A9A9A9;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
