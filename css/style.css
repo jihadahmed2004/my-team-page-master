@@ -13,15 +13,18 @@ body{
     margin: 0 auto;
 }
 /* header css stat */
-.header-container{    
+.header-container {
+    justify-content: center;
+    height: auto;
+    min-width: 310px;
+    margin: 60px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    flex-direction: row;
-    margin-top: 35px;
-    margin-bottom: 35px;
 }
-.header-box{
-    padding: 30px;
+.header-box {
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
 }
 .header-box h1{
     color: #000;
@@ -29,6 +32,8 @@ body{
     font-size: 36px;
     font-weight: 700;
     letter-spacing: -1.62px;
+    text-align: center;
+    line-height: 0.9em;
 }
 .header-box h2{
     color: #000;
@@ -49,6 +54,7 @@ body{
     grid-template-rows: repeat(8, 100px);
     column-gap: 35px;
     row-gap: 35px;
+    margin-top: 80px;
 }
 .image-container > div {
     justify-self: center;
@@ -77,7 +83,7 @@ body{
 }
 .img-box5{
     grid-column: 2;
-    grid-row: 7/8;
+    grid-row: 6/8;
 }
 .img-box6{
     grid-column: 3;
@@ -87,25 +93,38 @@ body{
     width: 238px;
     height: auto;
 }
+.image-container h3 {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
 .image-container p {
     color: #000;
     font-size: 12px;
-    font-weight: 600;
-    padding-top: 15px;
+    font-weight: normal;
     writing-mode: vertical-rl;
     margin: 0;
     position: absolute;
-    top: 0;
-    right: -25px;
-    height: 30vh;
+    top: calc(100% - 100px);
+    right: calc(100% - 260px);
+    line-height: 16px;
+    text-transform: uppercase;
+    font-family: 'PT Serif', serif;
+    min-height: 125px;
 }
-.footer-area {
-    margin: 20px 0px;
-    position: relative;
+.img-box5 p {
+    top: calc(100% - 235px) !important;
+}
+footer {
     display: flex;
     justify-content: center;
-    background: #f0f0f0;
-    padding: 30px 0px;
+    align-items: center;
+    margin-top: 120px;
+    background-color: rgb(233, 240, 240);
+    height: 10vh;
 }
 .footer-area p{
     color: #A9A9A9;
